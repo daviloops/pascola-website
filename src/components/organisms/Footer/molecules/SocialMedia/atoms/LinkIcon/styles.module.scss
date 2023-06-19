@@ -1,0 +1,20 @@
+.footerIconLink {
+  padding: 1rem;
+  transition: 0.2s ease-out;
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    transform: scale(1.1);
+    color: #fff;
+  }
+
+  &:active {
+    transform: scale(1);
+    color: #fff;
+  }
+}
+
+.footerIcon {
+  font-size: 2.375rem !important;
+}
