@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, SyntheticEvent } from 'react';
 
 import SuscriptionInputLabel from './atoms/SuscriptionInputLabel';
 import SuscriptionInput from './atoms/SuscriptionInput';
@@ -10,7 +10,7 @@ import styles from './styles.module.scss';
 const SuscriptionModal = () => {
   const [email, setEmail] = useState('');
   
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     try {
       const val = e.target[0].value;
@@ -20,13 +20,14 @@ const SuscriptionModal = () => {
     }
   };
 
+  const handleChange = (e: any): void => setEmail(e.target.value);
 
   return (
     <form onSubmit={handleSubmit}>
       <SuscriptionInputLabel />
       <div className={styles.container}>
         <div className={styles.inputContainer}>
-          <SuscriptionInput value={email} onChange={({ target: { value } }) => setEmail(value)} />
+          <SuscriptionInput value={email} onChange={handleChange} />
         </div>
         <SuscriptionButton email={email} />
       </div>
