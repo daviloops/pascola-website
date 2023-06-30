@@ -10,7 +10,7 @@ import styles from './styles.module.scss';
 
 const SocialMedia = (): JSX.Element => {
   return (
-    <div className={styles.mediaIcons}>
+    <div className={styles['media-icons']}>
       <LinkIcon href="https://www.facebook.com/pascolacln" icon={<FacebookIcon />} />
       <LinkIcon href="https://www.instagram.com/pascolacln/" icon={<InstagramIcon />} />
       <LinkIcon href="mailto:john@example.com" icon={<MailOutlinedIcon />} />

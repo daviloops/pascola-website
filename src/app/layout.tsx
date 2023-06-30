@@ -1,4 +1,6 @@
-import { Inter } from 'next/font/google'
+'use client';
+import { Inter } from 'next/font/google';
+import { SnackbarProvider } from 'notistack';
 
 import Footer from '@/components/organisms/Footer';
 
@@ -19,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+        <SnackbarProvider maxSnack={3}>{children}</SnackbarProvider>
         <Footer />
       </body>
     </html>

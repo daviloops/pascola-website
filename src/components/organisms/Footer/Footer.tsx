@@ -6,8 +6,8 @@ import styles from './styles.module.scss';
 
 const Footer = (): JSX.Element => {
   return (
-    <footer className={styles.footer}>
-      <h1 className={styles.footerTitle}>CONTACTO</h1>
+    <footer className={styles['footer']}>
+      <h1 className={styles['footer-title']}>CONTACTO</h1>
       <SocialMedia />
       <ContactList />
     </footer>

@@ -1,28 +1,33 @@
-.homeSection {
+.home-section {
+  position: relative;
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-image: url('/images/fondo.png');
-  background-size: cover;
 }
 
-.logoContainer {
+.home-background-image {
+  position: absolute;
+  object-fit: cover;
+}
+
+.logo-container {
   padding: 0 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; 
   text-align: center;
+  z-index: 1;
 }
 
-.logoText {
+.logo-text {
   margin-top: -12px;
   margin-bottom: 80px;
   color: #fff;
   font-size: 1.56rem;
 }
 
-.aboutSection {
+.about-section {
   overflow-x: hidden; // Hide danzante image overflow
   position: relative;
   height: 531px;
@@ -35,102 +40,102 @@
 
 }
 
-.raicesDelPuebloContainer {
+.raicesdelpueblo-container {
   position: absolute;
   left: 0;
   top: 10px;
 }
 
-.juyaAniaContainer {
+.juyaania-container {
   position: absolute;
   left: 30px;
   top: 215px;
 }
 
-.aboutContent {
+.about-content {
   max-width: 43rem;
   overflow-x: hidden;
   margin-bottom: 3rem;
   z-index: 1;
 }
 
-.aboutTitle {
-  font-family: Aleo-bold;
+.about-title {
+  font-family: Aleo-bold, sans-serif;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
-.aboutText {
+.about-text {
   font-size: 1.56rem;
   line-height: 30px;
 }
 
-.danzanteContainer {
+.danzante-container {
   position: absolute;
   right: 0;
   bottom: 0;
   margin-right: -32px;
 }
 
-.locationSection {
+.location-section {
   display: flex;
   justify-content: space-between;
   background-color: #EDE4DF;
 }
 
-.locationContainer {
+.location-container {
   margin-top: 5.15rem;
   margin-left: 3rem;
   z-index: 1;
 }
 
-.locationTitle {
+.location-title {
   margin-bottom: 1rem;
-  font-family: Aleo-bold;
+  font-family: Aleo-bold, sans-serif;
   font-size: 1.875rem;
 }
 
-.locationText {
+.location-text {
   margin-bottom: 4rem;
   font-size: 1.56rem;
   line-height: 30px;
 }
 
-.addressText {
+.address-text {
   max-width: 23rem;
 }
 
-.suscriptionSection {
+.suscription-section {
   position: relative;
   height: 531px;
   background-color: #EDE4DF;
 }
 
-.suscriptionRaicesContainer {
+.suscription-raices-container {
   position: absolute;
   left: 0;
   bottom: -125px;
 }
 
-.redSymbolContainer {
+.red-symbol-container {
   position: absolute;
   top: -50px;
   left: 35px;
 }
 
-.tusimmabewaaContainer {
+.tusimmabewaa-container {
   position: absolute;
   top: 0;
   right: 160px;
 }
 
-.juyaAniaSuscriptionContainer {
+.juyaania-suscription-container {
   position: absolute;
   right: 0;
   bottom: -90px;
 }
 
-.suscriptionContent {
+.suscription-content {
   padding-top: 16.53rem;
   margin-left: 10rem;
   position: relative;
