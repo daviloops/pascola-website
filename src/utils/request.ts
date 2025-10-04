@@ -1,11 +1,20 @@
 import axios from 'axios';
+import type { AxiosResponse } from 'axios';
+
+export interface RequestOptions {
+  method?: 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE';
+  body?: Record<string, any>; // or a more specific shape if you know it
+  data?: Record<string, any>; // or a more specific shape if you know it
+  headers?: Record<string, string>;
+}
+
 
 /**
  * Base adapter.
  * @param  {object} - A data object received from the request
  * @return {object} - Returns the data inside and object
  */
-export function baseAdapter({ data, status }) {
+export function baseAdapter({ data, status }: AxiosResponse) {
   return { data, status };
 }
 
@@ -21,8 +30,8 @@ export function baseAdapter({ data, status }) {
  * @return {object} - An object containing either "data" or "err"
  */
 export default function request(
-  url,
-  options = {},
+  url: string,
+  options: RequestOptions = {},
   baseUrl = process.env.NEXT_PUBLIC_API_URL,
   adapter = baseAdapter
 ) {
