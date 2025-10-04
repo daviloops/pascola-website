@@ -1,3 +1,3 @@
-import LinkIcon from './LinkIcon.client';
+import LinkIcon from './LinkIcon';
 
 export default LinkIcon;

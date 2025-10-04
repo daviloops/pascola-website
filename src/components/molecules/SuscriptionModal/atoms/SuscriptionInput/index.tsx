@@ -1,3 +1,3 @@
-import SuscriptionInput from './SuscriptionInput.client';
+import SuscriptionInput from './SuscriptionInput';
 
 export default SuscriptionInput;

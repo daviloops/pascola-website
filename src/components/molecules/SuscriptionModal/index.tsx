@@ -1,3 +1,3 @@
-import SuscriptionModal from './SuscriptionModal.client';
+import SuscriptionModal from './SuscriptionModal';
 
 export default SuscriptionModal;

@@ -1,10 +1,11 @@
 'use client';
-import React, { useState, SyntheticEvent } from 'react';
+import React, { useState } from 'react';
 import { useSnackbar } from 'notistack';
 
 import SuscriptionInputLabel from './atoms/SuscriptionInputLabel';
 import SuscriptionInput from './atoms/SuscriptionInput';
-import SuscriptionButton from './atoms/SuscriptionButton';
+// TODO clean
+// import SuscriptionButton from './atoms/SuscriptionButton';
 
 import request from '@/utils/request';
 import styles from './styles.module.scss';
@@ -38,7 +39,8 @@ const SuscriptionModal = () => {
         <div className={styles['input-container']}>
           <SuscriptionInput value={email} onChange={handleChange} />
         </div>
-        <SuscriptionButton loading={loading} email={email} />
+        {/* // TODO add suscription button  */}
+        {/* <SuscriptionButton loading={loading} email={email} /> */}
       </div>
     </form>
   );

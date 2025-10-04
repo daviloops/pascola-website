@@ -1,5 +1,7 @@
-'use client';
+'use client';;
 import ContactLink from './atoms/ContactLink';
+
+import type { JSX } from "react";
 
 const ContactList = (): JSX.Element => {
   return (

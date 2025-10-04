@@ -4,6 +4,8 @@ import ContactList from './molecules/ContactList';
 
 import styles from './styles.module.scss';
 
+import type { JSX } from "react";
+
 const Footer = (): JSX.Element => {
   return (
     <footer className={styles['footer']}>

@@ -1,3 +1,3 @@
-import SuscriptionButton from './SuscriptionButton.client';
+// import SuscriptionButton from './SuscriptionButton';
 
-export default SuscriptionButton;
+// export default SuscriptionButton;

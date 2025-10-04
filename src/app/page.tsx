@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import clsx from 'clsx';
 
-import SuscriptionModal from '@/components/molecules/SuscriptionModal';
+// TODO clean
+// import SuscriptionModal from '@/components/molecules/SuscriptionModal';
 
 import styles from './page.module.scss';
 
@@ -55,7 +56,8 @@ export default function Home() {
           <Image alt="location" src="/images/location.svg" width="603" height="500" />
         </div>
       </section>
-      <section className={styles['suscription-section']}>
+      {/* // TODO clean and also from styles */}
+      {/* <section className={styles['suscription-section']}>
         <div className={styles['suscription-raices-container']}>
           <Image alt="raices del pueblo" src="/images/raices-del-pueblo-yellow.svg" width="300" height="600" />
         </div>
@@ -71,7 +73,7 @@ export default function Home() {
         <div className={styles['suscription-content']}>
           <SuscriptionModal />
         </div>
-      </section>
+      </section> */}
     </main>
   )
 }

@@ -1,7 +1,5 @@
 import axios from 'axios';
 
-require('es6-promise').polyfill();
-
 /**
  * Base adapter.
  * @param  {object} - A data object received from the request
