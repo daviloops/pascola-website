@@ -19,7 +19,7 @@ const SocialMedia = (): JSX.Element => {
         title="Instagram"
       />
       <LinkIcon
-        href="https://api.whatsapp.com/send?phone=15551234567"
+        href="https://api.whatsapp.com/send?phone=526673239767"
         icon={<MessageCircleMore />}
         aria-label="WhatsApp"
         title="WhatsApp"

@@ -11,7 +11,7 @@ const ContactList = (): JSX.Element => {
         667 3239767
       </ContactLink>
       <ContactLink
-        href="mailto:john@example.com"
+        href="mailto:restaurante.pascola@gmail.com"
         // TODO: check if it works on mobile without this
         // onClick={() => navigator.clipboard.writeText('restaurante.pascola@gmail.com')}
         arial-label="email"
