@@ -1,29 +1,30 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { ReactNode } from 'react';
+import { Geist, Geist_Mono } from 'next/font/google';
 
-import Footer from '@/components/organisms/Footer';
+import Footer from '@/app/components/Footer';
 
 import './globals.css';
 import Providers from './providers';
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 });
 
 export const metadata = {
   title: 'Pascola restaurant',
   description: 'Traditional mexican food restaurant',
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -34,5 +35,5 @@ export default function RootLayout({
         </Providers>
       </body>
     </html>
-  )
+  );
 }

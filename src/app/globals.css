@@ -1,20 +1,21 @@
+@import 'tailwindcss';
+
 @font-face {
   font-family: Aleo;
-  src: url('/fonts/Aleo/Aleo-Regular.ttf');
+  src: url('/fonts/Aleo/Aleo-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: Aleo-bold;
-  src: url('/fonts/Aleo/Aleo-Bold.ttf');
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  font-family: Aleo;
+  src: url('/fonts/Aleo/Aleo-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-	/* Todo: avoid importat */
-	font-family: Aleo !important;
+  font-family: Aleo, sans-serif;
 }

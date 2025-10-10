@@ -1,12 +1,7 @@
-"use client"
+'use client';
 import { SnackbarProvider } from 'notistack';
+import { ReactNode } from 'react';
 
-export default function Providers({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <SnackbarProvider maxSnack={3}>{children}</SnackbarProvider>
-  );
+export default function Providers({ children }: { children: ReactNode }) {
+  return <SnackbarProvider maxSnack={3}>{children}</SnackbarProvider>;
 }

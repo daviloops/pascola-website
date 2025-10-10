@@ -15,15 +15,15 @@ const SuscriptionModal = () => {
   const [loading, setLoading] = useState(false);
 
   const { enqueueSnackbar } = useSnackbar();
-  
+
   const handleSubmit = (e: any) => {
     e.preventDefault();
     const val = e.target[0].value;
-    
+
     setLoading(true);
     request('/suscriptions', { method: 'POST', body: { email: val } })
       .then(() => enqueueSnackbar('Suscripción con éxito', { variant: 'success' }))
-      .catch(error => {
+      .catch((error) => {
         console.error(error);
         enqueueSnackbar('Ha habido un error en la sucripción', { variant: 'error' });
       })
@@ -40,6 +40,7 @@ const SuscriptionModal = () => {
           <SuscriptionInput value={email} onChange={handleChange} />
         </div>
         {/* // TODO add suscription button  */}
+        {loading}
         {/* <SuscriptionButton loading={loading} email={email} /> */}
       </div>
     </form>

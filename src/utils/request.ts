@@ -8,7 +8,6 @@ export interface RequestOptions {
   headers?: Record<string, string>;
 }
 
-
 /**
  * Base adapter.
  * @param  {object} - A data object received from the request
@@ -45,7 +44,10 @@ export default function request(
       'Content-Type': 'application/json',
       ...options.headers,
     },
-  };  
+  };
 
-  return axios.request(_options).then(res => adapter(res)).catch(error => console.error(error));
+  return axios
+    .request(_options)
+    .then((res) => adapter(res))
+    .catch((error) => console.error(error));
 }
