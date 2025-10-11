@@ -14,7 +14,7 @@ const Location = () => {
         </div>
         <div className="flex flex-col gap-[12] sm:gap-[16]">
           <h2 className="text-[1.5rem] font-bold sm:text-[1.875rem]">HORARIOS</h2>
-          <div className="max-w-none sm:w-[26rem] lg:w-[220]">
+          <div className="w-[11rem] min-[408]:w-[26rem] min-[1150]:w-[26rem] lg:max-[1150]:w-[13rem]">
             <p className="text-[1.25rem] sm:text-[1.50rem]">
               Lunes a Viernes: 7:00 AM - 1:30 PM <br></br>
               Sábado y Domingo: 7:30 AM - 2:00 PM
