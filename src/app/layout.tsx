@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 
 import Footer from '@/app/components/Footer';
 
@@ -32,6 +33,7 @@ export default function RootLayout({
         <Providers>
           {children}
           <Footer />
+          <Analytics />
         </Providers>
       </body>
     </html>
