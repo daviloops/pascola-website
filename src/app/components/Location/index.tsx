@@ -23,7 +23,12 @@ const Location = () => {
         </div>
       </div>
       <div className="relative aspect-[375/340] w-full lg:w-[639]">
-        <Image alt="location" src="/images/location.svg" fill className="object-contain" />
+        <Image
+          alt="mapa de ubicación"
+          src="/images/mapa-ubicacion.svg"
+          fill
+          className="object-contain"
+        />
       </div>
     </section>
   );

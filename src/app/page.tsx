@@ -1,4 +1,5 @@
 import React from 'react';
+import { Restaurant, WithContext } from 'schema-dts';
 
 import { Hero } from '@/app/components/Hero';
 import { About } from '@/app/components/About';
@@ -8,9 +9,107 @@ import { Location } from '@/app/components/Location';
 // TODO clean
 // import SuscriptionModal from '@/components/molecules/SuscriptionModal';
 
+const jsonLd: WithContext<Restaurant> = {
+  '@context': 'https://schema.org',
+  '@type': 'Restaurant',
+  name: 'Pascola',
+  description:
+    'Restaurante en Sinaloa con desayunos regionales y especialidad en cocina indígena Mayo Yoreme',
+  url: 'https://www.pascolarestaurante.mx',
+  telephone: '+526673239767',
+  // TODO: add
+  // "image": [
+  //   "https://www.pascolarestaurante.mx/images/entrada.jpg",
+  //   "https://www.pascolarestaurante.mx/images/desayuno1.jpg"
+  // ],
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Blvd. Rotarismo 1835, Desarrollo Urbano Tres Ríos',
+    addressLocality: 'Culiacán',
+    addressRegion: 'Sinaloa',
+    postalCode: '80020',
+    addressCountry: 'MX',
+  },
+  openingHours: ['Mo-Fr 06:30-13:30', 'Sa-Su 07:00-14:00'],
+  servesCuisine: [
+    'Mayo Yoreme',
+    'Cocina indígena',
+    'Desayunos regionales',
+    'Cocina mexicana',
+    'Cocina sinaloense',
+  ],
+  priceRange: '$100-200',
+  // TODO: add
+  // "hasMenu": "https://www.pascolarestaurante.mx/menu",
+  acceptsReservations: 'https://api.whatsapp.com/send?phone=526673239767',
+  paymentAccepted: 'Cash, Debit Card, Credit Card',
+  currenciesAccepted: 'MXN, USD',
+  // TODO: automate
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.5',
+    reviewCount: '723',
+  },
+  areaServed: {
+    '@type': 'Place',
+    name: 'Culiacán, Sinaloa',
+  },
+  brand: {
+    '@type': 'Brand',
+    name: 'Pascola',
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+52-667-123-4567',
+    contactType: 'Customer Service',
+    areaServed: 'MX',
+    availableLanguage: ['Spanish'],
+  },
+  email: 'restaurante.pascola@gmail.com',
+  // TODO: get date
+  // "foundingDate": "2020-08-15",
+  keywords: [
+    'desayunos regionales',
+    'comida indígena',
+    'cocina Mayo Yoreme',
+    'restaurante familiar',
+    'restaurante en Culiacán',
+  ],
+  logo: 'https://www.pascolarestaurante.mx/images/logo.svg',
+  // TODO: upgrade
+  makesOffer: {
+    '@type': 'Offer',
+    itemOffered: {
+      '@type': 'Menu',
+      name: 'Menú de desayunos',
+    },
+    priceCurrency: 'MXN',
+  },
+  hasMap: 'https://maps.app.goo.gl/z1kxANL49a1LysUN7',
+  latitude: 24.8217093,
+  longitude: -107.4077027,
+  publicAccess: true,
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://www.pascolarestaurante.mx',
+  },
+  // TODO: add more
+  sameAs: [
+    'https://www.facebook.com/pascolacln',
+    'https://www.instagram.com/pascolacln',
+    'https://www.google.com/maps/place/Restaurant+Regional+PASCOLA/@24.8217955,-107.4078471,17z/data=!3m1!4b1!4m6!3m5!1s0x86bcda0cd9b9352b:0x53aa48dca84b506!8m2!3d24.8217955!4d-107.4078471!16s%2Fg%2F11b7q1ydml',
+  ],
+};
+
 export default function Home() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
+        }}
+      />
       <Hero />
       <About />
       <Gallery />
