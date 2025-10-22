@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+/* @plugin "daisyui"; */
+
 @font-face {
   font-family: Aleo;
   src: url('/fonts/Aleo/Aleo-Regular.ttf') format('truetype');

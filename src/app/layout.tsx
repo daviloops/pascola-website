@@ -44,7 +44,8 @@ export const metadata = {
     //   },
     // ],
     locale: 'es_MX',
-    type: 'restaurant',
+
+    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
