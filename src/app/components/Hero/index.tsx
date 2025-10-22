@@ -9,7 +9,7 @@ const Hero = () => {
       <Image
         priority
         alt="restaurante Pascola con un platillo de comida en el centro"
-        src="/images/restaurante_pascola1.jpg"
+        src="/images/restaurante_pascola1.webp"
         fill
         className="object-cover"
       />

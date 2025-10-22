@@ -1,6 +1,6 @@
-@import 'tailwindcss';
+@import url('tailwindcss');
 
-/* @plugin "daisyui"; */
+@plugin "daisyui";
 
 @font-face {
   font-family: Aleo;

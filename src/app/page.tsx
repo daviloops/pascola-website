@@ -5,6 +5,7 @@ import { Hero } from '@/app/components/Hero';
 import { About } from '@/app/components/About';
 import { Gallery } from '@/app/components/Gallery';
 import { Location } from '@/app/components/Location';
+import { Facilities } from '@/app/components/Facilities';
 
 // TODO clean
 // import SuscriptionModal from '@/components/molecules/SuscriptionModal';
@@ -114,6 +115,7 @@ export default function Home() {
       <About />
       <Gallery />
       <Location />
+      <Facilities />
       {/* // TODO clean and also from styles */}
       {/* <section className={styles['suscription-section']}>
         <div className={styles['suscription-raices-container']}>
