@@ -18,11 +18,8 @@ const jsonLd: WithContext<Restaurant> = {
     'Restaurante en Sinaloa con desayunos regionales y especialidad en cocina indígena Mayo Yoreme',
   url: 'https://www.pascolarestaurante.mx',
   telephone: '+526673239767',
-  // TODO: add
-  // "image": [
-  //   "https://www.pascolarestaurante.mx/images/entrada.jpg",
-  //   "https://www.pascolarestaurante.mx/images/desayuno1.jpg"
-  // ],
+  // TODO: add more images
+  image: ['https://www.pascolarestaurante.mx/images/hero/restaurante-pascola.webp'],
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Blvd. Rotarismo 1835, Desarrollo Urbano Tres Ríos',
@@ -40,8 +37,8 @@ const jsonLd: WithContext<Restaurant> = {
     'Cocina sinaloense',
   ],
   priceRange: '$100-200',
-  // TODO: add
-  // "hasMenu": "https://www.pascolarestaurante.mx/menu",
+  // TODO: upgrade
+  hasMenu: 'https://www.pascolarestaurante.mx/menu-pascola.pdf',
   acceptsReservations: 'https://wa.me/526673239767',
   paymentAccepted: 'Cash, Debit Card, Credit Card',
   currenciesAccepted: 'MXN, USD',
