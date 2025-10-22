@@ -5,7 +5,7 @@ import LinkIcon from './LinkIcon';
 
 const SocialMedia = (): JSX.Element => {
   return (
-    <div className="flex gap-[18]">
+    <div className="flex gap-[24] sm:gap-[30]">
       <LinkIcon
         href="https://www.facebook.com/pascolacln"
         icon={<Facebook />}
