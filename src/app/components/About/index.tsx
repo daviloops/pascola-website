@@ -8,7 +8,8 @@ const About = () => {
           <div className="relative h-[88] w-[88] sm:h-[174] sm:w-[174]">
             <Image
               alt="raices del pueblo"
-              src="/images/raices-del-pueblo.svg"
+              src="/images/about/raices-del-pueblo.svg"
+              unoptimized
               fill
               className="object-contain"
             />
@@ -16,7 +17,13 @@ const About = () => {
         </div>
         <div className="absolute top-[374] left-[49] sm:top-[148] sm:left-[0]">
           <div className="relative h-[57] w-[73] sm:h-[113.97] sm:w-[146]">
-            <Image alt="juya ania" src="/images/juya-ania.svg" fill className="object-contain" />
+            <Image
+              alt="juya ania"
+              src="/images/about/juya-ania.svg"
+              unoptimized
+              fill
+              className="object-contain"
+            />
           </div>
         </div>
       </div>
@@ -34,7 +41,13 @@ const About = () => {
       </div>
       <div className="absolute right-2 bottom-[-34] z-100 sm:bottom-[-86] lg:bottom-[-100]">
         <div className="relative h-[176] w-[176] sm:h-[444] sm:w-[444] lg:h-[510] lg:w-[510]">
-          <Image alt="danzante" src="/images/danzante.svg" fill className="object-contain" />
+          <Image
+            alt="danzante"
+            src="/images/about/danzante.svg"
+            unoptimized
+            fill
+            className="object-contain"
+          />
         </div>
       </div>
     </section>

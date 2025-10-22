@@ -31,7 +31,7 @@ export const metadata = {
   openGraph: {
     title: 'Restaurante Pascola | Desayunos Mayo Yoreme en Culiacán',
     description:
-      'Cocina indígena tradicional del norte de México. Disfruta de nuestros desayunos regionales en un ambiente familiar.',
+      'Pascola es un restaurante en Sinaloa con desayunos regionales y especialidad en cocina indígena Mayo Yoreme. Visítanos y saborea el norte.',
     url: 'https://www.pascolarestaurante.mx',
     siteName: 'Restaurante Pascola',
     // TODO: add image

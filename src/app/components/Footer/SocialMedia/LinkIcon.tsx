@@ -11,7 +11,7 @@ const LinkIcon = ({ icon, ...props }: LinkIconProps): JSX.Element => {
     <a
       target="_blank"
       rel="noreferrer noopener"
-      className="text-[#000] no-underline transition duration-200 ease-in-out hover:scale-[1.1] hover:text-[#fff] active:scale-[1] active:text-[#fff]"
+      className="no-underline transition duration-200 ease-in-out hover:scale-[1.05] hover:fill-white active:scale-[0.95] active:fill-[#DDDDDD]"
       {...props}
     >
       {icon &&

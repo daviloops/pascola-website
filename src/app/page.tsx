@@ -33,7 +33,7 @@ const jsonLd: WithContext<Restaurant> = {
   },
   openingHours: ['Mo-Fr 06:30-13:30', 'Sa-Su 07:00-14:00'],
   servesCuisine: [
-    'Mayo Yoreme',
+    'Cocina Mayo Yoreme',
     'Cocina indígena',
     'Desayunos regionales',
     'Cocina mexicana',
@@ -42,7 +42,7 @@ const jsonLd: WithContext<Restaurant> = {
   priceRange: '$100-200',
   // TODO: add
   // "hasMenu": "https://www.pascolarestaurante.mx/menu",
-  acceptsReservations: 'https://api.whatsapp.com/send?phone=526673239767',
+  acceptsReservations: 'https://wa.me/526673239767',
   paymentAccepted: 'Cash, Debit Card, Credit Card',
   currenciesAccepted: 'MXN, USD',
   // TODO: automate
@@ -61,14 +61,13 @@ const jsonLd: WithContext<Restaurant> = {
   },
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+52-667-123-4567',
+    telephone: '+526673239767',
     contactType: 'Customer Service',
     areaServed: 'MX',
     availableLanguage: ['Spanish'],
   },
   email: 'restaurante.pascola@gmail.com',
-  // TODO: get date
-  // "foundingDate": "2020-08-15",
+  foundingDate: '2013-12-12',
   keywords: [
     'desayunos regionales',
     'comida indígena',
@@ -76,7 +75,7 @@ const jsonLd: WithContext<Restaurant> = {
     'restaurante familiar',
     'restaurante en Culiacán',
   ],
-  logo: 'https://www.pascolarestaurante.mx/images/logo.svg',
+  logo: 'https://www.pascolarestaurante.mx/images/hero/logo.svg',
   // TODO: upgrade
   makesOffer: {
     '@type': 'Offer',
