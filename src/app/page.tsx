@@ -15,7 +15,7 @@ const jsonLd: WithContext<Restaurant> = {
   '@type': 'Restaurant',
   name: 'Pascola',
   description:
-    'Restaurante en Sinaloa con desayunos regionales y especialidad en cocina indígena Mayo Yoreme',
+    'Restaurante familiar en Culiacán que ofrece desayunos regionales típicos de Sinaloa. Saborea la cocina indígena Mayo Yoreme.',
   url: 'https://www.pascolarestaurante.mx',
   telephone: '+526673239767',
   // TODO: add more images
@@ -64,6 +64,7 @@ const jsonLd: WithContext<Restaurant> = {
     '@type': 'Brand',
     name: 'Pascola',
   },
+  // TODO: upgrade
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+526673239767',
@@ -90,6 +91,7 @@ const jsonLd: WithContext<Restaurant> = {
     'comida indígena mexicana',
     'comida indígena de mexico',
     'mayo yoreme',
+    'comida mayo yoreme',
     'restaurante sinaloense',
     'restaurante pascola culiacan', // sin revisar aun
     'pascola horario', // sin revisar aun

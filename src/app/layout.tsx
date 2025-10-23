@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: 'Desayunos tradicionales mexicanos en Culiacán | Restaurante Pascola',
   description:
-    'Pascola es restaurante familiar en Culiacán con comida mexicana tradicional y desayunos sinaloenses. Saborea la cocina indígena Mayo Yoreme.',
+    'Pascola es un restaurante familiar en Culiacán que ofrece desayunos regionales típicos de Sinaloa. Saborea la cocina indígena Mayo Yoreme.',
   keywords: [
     'comida mexicana', // mas de 10,000
     'comida mexicana tradicional', // mas de 1,000
@@ -38,6 +38,7 @@ export const metadata = {
     'comida indígena mexicana',
     'comida indígena de mexico',
     'mayo yoreme',
+    'comida mayo yoreme',
     'restaurante sinaloense',
     'restaurante pascola culiacan', // sin revisar aun
     'pascola horario', // sin revisar aun
@@ -46,7 +47,7 @@ export const metadata = {
   openGraph: {
     title: 'Restaurante Pascola | Desayunos tradicionales mexicanos en Culiacán',
     description:
-      'Pascola es restaurante familiar en Culiacán con comida mexicana tradicional y desayunos sinaloenses. Saborea la cocina indígena Mayo Yoreme.',
+      'Pascola es un restaurante familiar en Culiacán que ofrece desayunos regionales típicos de Sinaloa. Saborea la cocina indígena Mayo Yoreme.',
     url: 'https://www.pascolarestaurante.mx',
     siteName: 'Restaurante Pascola',
     images: [
@@ -65,7 +66,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Restaurante Pascola | Desayunos tradicionales mexicanos en Culiacán',
     description:
-      'Pascola es restaurante familiar en Culiacán con comida mexicana tradicional y desayunos sinaloenses. Saborea la cocina indígena Mayo Yoreme.',
+      'Pascola es un restaurante familiar en Culiacán que ofrece desayunos regionales típicos de Sinaloa. Saborea la cocina indígena Mayo Yoreme.',
     images: ['https://www.pascolarestaurante.mx/images/hero/restaurante-pascola.webp'],
   },
   metadataBase: new URL('https://www.pascolarestaurante.mx'),
