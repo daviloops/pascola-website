@@ -7,23 +7,25 @@ const Hero = () => {
   return (
     <Section className="relative flex h-dvh justify-center">
       <Image
-        priority
         alt="restaurante Pascola con un platillo de comida en el centro"
         src="/images/hero/restaurante-pascola.webp"
         fill
         className="object-cover"
+        priority
+        fetchPriority="high"
       />
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center gap-[36] px-12 text-center sm:gap-[52]">
         <div className="relative h-[166] w-[264] sm:h-[290.4] sm:w-[462]">
           <Image
-            priority
             alt="logo"
             src="/images/hero/logo.svg"
             unoptimized
             fill
             className="object-cover"
+            priority
+            fetchPriority="high"
           />
         </div>
         <div className="join join-vertical sm:join-horizontal gap-4 sm:gap-8">

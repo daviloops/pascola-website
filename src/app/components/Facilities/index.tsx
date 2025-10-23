@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import { Section } from '../Section';
 
-// TODO:
+// TODO: refactor
 // const facilityImages = [
 //   {
 //     src: "/images/facilities/palapa-con-mesas.webp",
@@ -18,52 +18,62 @@ const Facilities = () => {
       <div className="relative flex w-full flex-col overflow-x-hidden sm:max-w-[612] md:max-w-[693] lg:max-w-[960]">
         <div className="carousel carousel-center rounded-box space-x-4 sm:space-x-5 md:space-x-6 lg:space-x-10">
           <div id="item1" className="carousel-item">
-            <div className="relative aspect-[1920/1280] h-[200] min-[500]:h-[269] sm:h-[300] md:h-[333] lg:h-[444]">
+            <div className="relative aspect-1920/1280 h-[200] min-[500]:h-[269] sm:h-[300] md:h-[333] lg:h-[444]">
               <Image
                 alt="mesas bajo la palapa principal"
                 src="/images/facilities/palapa-con-mesas.webp"
                 fill
-                className="object-contain"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover"
+                priority
               />
             </div>
           </div>
           <div id="item2" className="carousel-item">
-            <div className="relative aspect-[1920/1440] h-[200] min-[500]:h-[269] sm:h-[300] md:h-[333] lg:h-[444]">
+            <div className="relative aspect-1920/1440 h-[200] min-[500]:h-[269] sm:h-[300] md:h-[333] lg:h-[444]">
               <Image
                 alt="mesas bajo la palapa principal y jardín exterior"
                 src="/images/facilities/palapa-y-exterior.webp"
                 fill
-                className="object-contain"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover"
+                loading="lazy"
               />
             </div>
           </div>
           <div id="item3" className="carousel-item">
-            <div className="relative aspect-[4608/3456] h-[200] min-[500]:h-[269] sm:h-[300] md:h-[333] lg:h-[444]">
+            <div className="relative aspect-4608/3456 h-[200] min-[500]:h-[269] sm:h-[300] md:h-[333] lg:h-[444]">
               <Image
                 alt="area privada para comer y eventos"
                 src="/images/facilities/area-privada.webp"
                 fill
-                className="object-contain"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover"
+                loading="lazy"
               />
             </div>
           </div>
           <div id="item4" className="carousel-item">
-            <div className="relative aspect-[1920/1440] h-[200] min-[500]:h-[269] sm:h-[300] md:h-[333] lg:h-[444]">
+            <div className="relative aspect-1920/1440 h-[200] min-[500]:h-[269] sm:h-[300] md:h-[333] lg:h-[444]">
               <Image
                 alt="area de descanso con sillas y decoraciones bajo un techumbre de madera"
                 src="/images/facilities/area-descanso-con-techumbre.webp"
                 fill
-                className="object-contain"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover"
+                loading="lazy"
               />
             </div>
           </div>
           <div id="item5" className="carousel-item">
-            <div className="relative aspect-[3816/3456] h-[200] min-[500]:h-[269] sm:h-[300] md:h-[333] lg:h-[444]">
+            <div className="relative aspect-3816/3456 h-[200] min-[500]:h-[269] sm:h-[300] md:h-[333] lg:h-[444]">
               <Image
                 alt="area de niños con juegos"
                 src="/images/facilities/area-ninos.webp"
                 fill
-                className="object-contain"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover"
+                loading="lazy"
               />
             </div>
           </div>
