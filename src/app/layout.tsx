@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: 'Desayunos tradicionales mexicanos en Culiacán | Restaurante Pascola',
   description:
-    'Pascola es un restaurante familiar en Culiacán que ofrece desayunos regionales típicos de Sinaloa. Saborea la cocina indígena Mayo Yoreme.',
+    'Restaurante familiar en Culiacán que ofrece desayunos regionales típicos de Sinaloa. Saborea la cocina indígena Mayo Yoreme.',
   keywords: [
     'comida mexicana', // mas de 10,000
     'comida mexicana tradicional', // mas de 1,000
@@ -47,7 +47,7 @@ export const metadata = {
   openGraph: {
     title: 'Restaurante Pascola | Desayunos tradicionales mexicanos en Culiacán',
     description:
-      'Pascola es un restaurante familiar en Culiacán que ofrece desayunos regionales típicos de Sinaloa. Saborea la cocina indígena Mayo Yoreme.',
+      'Restaurante familiar en Culiacán que ofrece desayunos regionales típicos de Sinaloa. Saborea la cocina indígena Mayo Yoreme.',
     url: 'https://www.pascolarestaurante.mx',
     siteName: 'Restaurante Pascola',
     images: [
@@ -55,7 +55,7 @@ export const metadata = {
         url: 'https://www.pascolarestaurante.mx/images/hero/restaurante-pascola.webp',
         width: 1920,
         height: 1440,
-        alt: 'Desayuno tradicional Mayo Yoreme en Pascola',
+        alt: 'Desayuno tradicional mexicano en el restaurante Pascola',
       },
     ],
     locale: 'es_MX',
@@ -66,7 +66,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Restaurante Pascola | Desayunos tradicionales mexicanos en Culiacán',
     description:
-      'Pascola es un restaurante familiar en Culiacán que ofrece desayunos regionales típicos de Sinaloa. Saborea la cocina indígena Mayo Yoreme.',
+      'Restaurante familiar en Culiacán que ofrece desayunos regionales típicos de Sinaloa. Saborea la cocina indígena Mayo Yoreme.',
     images: ['https://www.pascolarestaurante.mx/images/hero/restaurante-pascola.webp'],
   },
   metadataBase: new URL('https://www.pascolarestaurante.mx'),
