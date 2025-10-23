@@ -19,7 +19,14 @@ const jsonLd: WithContext<Restaurant> = {
   url: 'https://www.pascolarestaurante.mx',
   telephone: '+526673239767',
   // TODO: add more images
-  image: ['https://www.pascolarestaurante.mx/images/hero/restaurante-pascola.webp'],
+  image: [
+    'https://www.pascolarestaurante.mx/images/hero/restaurante-pascola.webp',
+    'https://www.pascolarestaurante.mx/images/facilities/palapa-con-mesas.webp',
+    'https://www.pascolarestaurante.mx/images/facilities/area-privada.webp',
+    'https://www.pascolarestaurante.mx/images/facilities/palapa-y-exterior.webp',
+    'https://www.pascolarestaurante.mx/images/facilities/area-descanso-con-techumbre.webp',
+    'https://www.pascolarestaurante.mx/images/facilities/area-ninos.webp',
+  ],
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Blvd. Rotarismo 1835, Desarrollo Urbano Tres Ríos',
@@ -30,11 +37,12 @@ const jsonLd: WithContext<Restaurant> = {
   },
   openingHours: ['Mo-Fr 06:30-13:30', 'Sa-Su 07:00-14:00'],
   servesCuisine: [
-    'Cocina Mayo Yoreme',
-    'Cocina indígena',
-    'Desayunos regionales',
-    'Cocina mexicana',
-    'Cocina sinaloense',
+    'Sinaloense',
+    'Mexican',
+    'Indigenous mexican',
+    'Mayo Yoreme',
+    'Tradicional',
+    'Regional',
   ],
   priceRange: '$100-200',
   // TODO: upgrade
@@ -66,11 +74,26 @@ const jsonLd: WithContext<Restaurant> = {
   email: 'restaurante.pascola@gmail.com',
   foundingDate: '2013-12-12',
   keywords: [
-    'desayunos regionales',
+    'comida mexicana', // mas de 10,000
+    'comida mexicana tradicional', // mas de 1,000
+    'restaurantes de comida mexicana', // mas de 100
+    'restaurante familiar', // mas de 100
+    'comida sinaloense', // mas de 100
+    'desayunos tradicionales',
+    'desayunos tradicionales mexicanos',
+    'restaurante en culiacan',
+    'desayunos en culiacan',
+    'restaurante de desayunos',
+    'restaurantes de desayunos en culiacan',
+    'comida indigena',
     'comida indígena',
-    'cocina Mayo Yoreme',
-    'restaurante familiar',
-    'restaurante en Culiacán',
+    'comida indígena mexicana',
+    'comida indígena de mexico',
+    'mayo yoreme',
+    'restaurante sinaloense',
+    'restaurante pascola culiacan', // sin revisar aun
+    'pascola horario', // sin revisar aun
+    'desayunos regionales', // no definido si es buena
   ],
   logo: 'https://www.pascolarestaurante.mx/images/hero/logo.svg',
   // TODO: upgrade
@@ -79,6 +102,7 @@ const jsonLd: WithContext<Restaurant> = {
     itemOffered: {
       '@type': 'Menu',
       name: 'Menú de desayunos',
+      url: 'https://www.pascolarestaurante.mx/menu-pascola.pdf',
     },
     priceCurrency: 'MXN',
   },

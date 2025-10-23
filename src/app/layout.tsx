@@ -18,20 +18,35 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: 'Desayunos regionales Mayo Yoreme en Culiacán | Restaurante Pascola',
+  title: 'Desayunos tradicionales mexicanos en Culiacán | Restaurante Pascola',
   description:
-    'Pascola es un restaurante en Sinaloa con desayunos regionales y especialidad en cocina indígena Mayo Yoreme. Visítanos y saborea el norte.',
+    'Pascola es restaurante familiar en Culiacán con comida mexicana tradicional y desayunos sinaloenses. Saborea la cocina indígena Mayo Yoreme.',
   keywords: [
-    'restaurante en Culiacán',
-    'desayunos regionales',
-    'cocina Mayo Yoreme',
+    'comida mexicana', // mas de 10,000
+    'comida mexicana tradicional', // mas de 1,000
+    'restaurantes de comida mexicana', // mas de 100
+    'restaurante familiar', // mas de 100
+    'comida sinaloense', // mas de 100
+    'desayunos tradicionales',
+    'desayunos tradicionales mexicanos',
+    'restaurante en culiacan',
+    'desayunos en culiacan',
+    'restaurante de desayunos',
+    'restaurantes de desayunos en culiacan',
+    'comida indigena',
+    'comida indígena',
+    'comida indígena mexicana',
+    'comida indígena de mexico',
+    'mayo yoreme',
     'restaurante sinaloense',
-    'comida tradicional Sinaloa',
+    'restaurante pascola culiacan', // sin revisar aun
+    'pascola horario', // sin revisar aun
+    'desayunos regionales', // no definido si es buena
   ],
   openGraph: {
-    title: 'Restaurante Pascola | Desayunos regionales Mayo Yoreme en Culiacán',
+    title: 'Restaurante Pascola | Desayunos tradicionales mexicanos en Culiacán',
     description:
-      'Pascola es un restaurante en Sinaloa con desayunos regionales y especialidad en cocina indígena Mayo Yoreme. Visítanos y saborea el norte.',
+      'Pascola es restaurante familiar en Culiacán con comida mexicana tradicional y desayunos sinaloenses. Saborea la cocina indígena Mayo Yoreme.',
     url: 'https://www.pascolarestaurante.mx',
     siteName: 'Restaurante Pascola',
     images: [
@@ -48,9 +63,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Restaurante Pascola | Desayunos regionales Mayo Yoreme en Culiacán',
+    title: 'Restaurante Pascola | Desayunos tradicionales mexicanos en Culiacán',
     description:
-      'Pascola es un restaurante en Sinaloa con desayunos regionales y especialidad en cocina indígena Mayo Yoreme. Visítanos y saborea el norte.',
+      'Pascola es restaurante familiar en Culiacán con comida mexicana tradicional y desayunos sinaloenses. Saborea la cocina indígena Mayo Yoreme.',
     images: ['https://www.pascolarestaurante.mx/images/hero/restaurante-pascola.webp'],
   },
   metadataBase: new URL('https://www.pascolarestaurante.mx'),
