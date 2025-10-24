@@ -13,6 +13,7 @@ const Hero = () => {
         className="object-cover"
         priority
         fetchPriority="high"
+        sizes="100vw"
       />
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
@@ -20,12 +21,12 @@ const Hero = () => {
         <div className="relative h-[166] w-[264] sm:h-[290.4] sm:w-[462]">
           <Image
             alt="logo"
-            src="/images/hero/logo.svg"
-            unoptimized
+            src="/images/hero/logo.webp"
             fill
             className="object-cover"
             priority
             fetchPriority="high"
+            sizes="(max-width: 640px) 264px, 462px"
           />
         </div>
         <div className="join join-vertical sm:join-horizontal gap-4 sm:gap-8">
