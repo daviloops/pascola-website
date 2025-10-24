@@ -11,7 +11,7 @@ const ContactLink = ({
   return (
     <a
       className={clsx(
-        'text-[1.25rem] text-[#000] no-underline hover:scale-[1.01] hover:text-[#fff] active:scale-[1] sm:text-[1.5rem]',
+        'text-[1.25rem] text-white no-underline hover:scale-[1.01] hover:text-gray-200 active:scale-[0.99] active:text-[#CFE0DC] sm:text-[1.5rem]',
         className
       )}
       {...props}
