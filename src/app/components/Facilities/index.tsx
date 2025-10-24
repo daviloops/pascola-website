@@ -23,7 +23,7 @@ const Facilities = () => {
                 alt="mesas bajo la palapa principal"
                 src="/images/facilities/palapa-con-mesas.webp"
                 fill
-                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 50vw, 33vw"
+                sizes="(max-width: 640px) 404px, (max-width: 768px) 450px, (max-width: 1024px) 500px, 666px"
                 className="object-cover"
                 priority
               />
@@ -35,7 +35,7 @@ const Facilities = () => {
                 alt="mesas bajo la palapa principal y jardín exterior"
                 src="/images/facilities/palapa-y-exterior.webp"
                 fill
-                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 50vw, 33vw"
+                sizes="(max-width: 640px) 360px, (max-width: 768px) 400px, (max-width: 1024px) 444px, 592px"
                 className="object-cover"
                 loading="lazy"
               />
@@ -47,7 +47,7 @@ const Facilities = () => {
                 alt="area privada para comer y eventos"
                 src="/images/facilities/area-privada.webp"
                 fill
-                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 50vw, 33vw"
+                sizes="(max-width: 640px) 360px, (max-width: 768px) 400px, (max-width: 1024px) 444px, 592px"
                 className="object-cover"
                 loading="lazy"
               />
@@ -59,7 +59,7 @@ const Facilities = () => {
                 alt="area de descanso con sillas y decoraciones bajo un techumbre de madera"
                 src="/images/facilities/area-descanso-con-techumbre.webp"
                 fill
-                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 50vw, 33vw"
+                sizes="(max-width: 640px) 360px, (max-width: 768px) 400px, (max-width: 1024px) 444px, 592px"
                 className="object-cover"
                 loading="lazy"
               />
@@ -71,7 +71,7 @@ const Facilities = () => {
                 alt="area de niños con juegos"
                 src="/images/facilities/area-ninos.webp"
                 fill
-                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 50vw, 33vw"
+                sizes="(max-width: 640px) 298px, (max-width: 768px) 332px, (max-width: 1024px) 368px, 492px"
                 className="object-cover"
                 loading="lazy"
               />
