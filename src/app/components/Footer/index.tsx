@@ -8,15 +8,15 @@ const Footer = ({ className, ...props }: HTMLAttributes<HTMLElement>): JSX.Eleme
   return (
     <footer
       className={clsx(
-        'flex flex-col items-center justify-center gap-[24] bg-[#3F7364] py-14.5',
+        'flex flex-col items-center justify-center gap-[24] bg-[#3F7364] py-14.5 text-gray-200',
         className
       )}
       {...props}
     >
-      <h2 className="text-[1.5rem] font-bold text-white sm:text-[1.875rem]">CONTACTO</h2>
+      <h2 className="text-[1.5rem] font-bold sm:text-[1.875rem]">CONTACTO</h2>
       <SocialMedia />
       <ContactList />
-      <p className="text-[0.75rem] text-white sm:text-[0.875rem]">DERECHOS RESERVADOS</p>
+      <p className="text-[0.75rem] sm:text-[0.875rem]">DERECHOS RESERVADOS</p>
     </footer>
   );
 };
