@@ -7,7 +7,8 @@ const SLIDES = [
   {
     imageSrc: '/images/facilities/palapa-con-mesas.webp',
     altText: 'mesas bajo la palapa principal',
-    sizes: '(max-width: 640px) 404px, (max-width: 768px) 450px, (max-width: 1024px) 500px, 666px',
+    sizes:
+      '(max-width: 640px) 324px, (max-width: 768px) 368px, (max-width: 1024px) 416px, (max-width: 1280px) 384px, (max-width: 1536px) 444px, 488px',
     width: 600, // forced to fit, real value is 720
     height: 450, // forced to fit, real value is 480
   },
@@ -38,7 +39,8 @@ const SLIDES = [
   {
     imageSrc: '/images/facilities/area-ninos.webp',
     altText: 'area de niños con juegos',
-    sizes: '(max-width: 640px) 298px, (max-width: 768px) 332px, (max-width: 1024px) 368px, 492px',
+    sizes:
+      '(max-width: 640px) 324px, (max-width: 768px) 368px, (max-width: 1024px) 416px, (max-width: 1280px) 384px, (max-width: 1536px) 444px, 488px',
     width: 600,
     height: 450, // forced to fit, real value is 543
   },
