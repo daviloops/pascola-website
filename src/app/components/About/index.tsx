@@ -33,7 +33,7 @@ const About = () => {
         </div>
         <div className="max-w-76 sm:max-w-156">
           <p className="text-[1.125rem] sm:text-[1.5rem]">
-            En Pascola Restaurante, nuestro compromiso es llevar a tus sentidos una experiencia
+            En Pascola Restaurante nuestro compromiso es llevar a tus sentidos una experiencia
             gastronómica única, en la cual la tradición y el sabor se entrelacen para transportarte
             a las raíces de la cocina sinaloense.
           </p>

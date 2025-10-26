@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { EmblaCarouselType, EmblaEventType, EmblaOptionsType } from 'embla-carousel';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
+import type { AutoplayOptionsType } from 'embla-carousel-autoplay';
 
 import './embla.css';
 
@@ -16,7 +17,6 @@ const numberWithinRange = (number: number, min: number, max: number): number =>
 type Slide = {
   imageSrc: string;
   altText: string;
-  sizes: string;
   width: number;
   height: number;
 };
@@ -24,14 +24,15 @@ type Slide = {
 type PropType = {
   slides: Slide[];
   options?: EmblaOptionsType;
+  autoplayOptions?: AutoplayOptionsType;
 };
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
-  const { slides, options } = props;
+  const { slides, options, autoplayOptions } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
     Autoplay({
       playOnInit: true,
-      delay: 4000,
+      delay: autoplayOptions?.delay || 4000,
       stopOnInteraction: false,
       stopOnMouseEnter: true,
       stopOnFocusIn: true,
@@ -112,7 +113,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     <div className="embla w-full">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map(({ imageSrc, altText, sizes, width, height }: Slide, index) => (
+          {slides.map(({ imageSrc, altText, width, height }: Slide, index) => (
             <div className="embla__slide flex-[0_0_55%] lg:flex-[0_0_35%]" key={index}>
               <div className="embla__slide__number h-[243] sm:h-[276] md:h-[312] lg:h-[288] xl:h-[333] 2xl:h-[366]">
                 {/* TODO: maybe add biggest size to mobile w-[340] h-[255] */}
@@ -123,7 +124,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                     className="embla__slide__img h-[243] object-cover sm:h-[276] md:h-[312] lg:h-[288] xl:h-[333] 2xl:h-[366]"
                     src={imageSrc}
                     alt={altText}
-                    sizes={sizes}
+                    sizes="(max-width: 640px) 324px, (max-width: 768px) 368px, (max-width: 1024px) 416px, (max-width: 1280px) 384px, (max-width: 1536px) 444px, 488px"
                     fill
                     loading="lazy"
                   />

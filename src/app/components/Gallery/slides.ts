@@ -1,0 +1,92 @@
+export const SLIDES = [
+  {
+    imageSrc: '/images/gallery/chilaquiles-en-salsa-roja-con-pollo.webp',
+    altText: 'chilaquiles en salsa roja con pollo',
+    width: 600,
+    height: 483.06,
+  },
+  {
+    imageSrc: '/images/gallery/combinacion-chibba.webp',
+    altText: 'combinacion chibba',
+    width: 600,
+    height: 450,
+  },
+  {
+    imageSrc: '/images/gallery/minipanques.webp',
+    altText: 'minipanques',
+    width: 600,
+    height: 505.71,
+  },
+  {
+    imageSrc: '/images/gallery/enchiladas-rojas-con-pollo.webp',
+    altText: 'enchiladas rojas con pollo',
+    width: 600,
+    height: 558.98,
+  },
+  {
+    imageSrc: '/images/gallery/combinacion-mochicahui.webp',
+    altText: 'combinacion mochicahui con cafe',
+    width: 600,
+    height: 498.37,
+  },
+  {
+    imageSrc: '/images/gallery/estrellados-montaditos-en-mole-pascola.webp',
+    altText: 'estrellados montaditos en mole pascola',
+    width: 600,
+    height: 512.45,
+  },
+  {
+    imageSrc: '/images/gallery/combinacion-kabba.webp',
+    altText: 'combinacion kabba',
+    width: 600,
+    height: 453.67,
+  },
+  {
+    imageSrc: '/images/gallery/fruta-con-yogurt-y-granola.webp',
+    altText: 'fruta con yogurt y granola',
+    width: 600,
+    height: 531.4,
+  },
+  {
+    imageSrc: '/images/gallery/venadito.webp',
+    altText: 'venadito',
+    width: 600,
+    height: 450,
+  },
+  {
+    imageSrc: '/images/gallery/tortillas-de-nopal.webp',
+    altText: 'tortillas de nopal',
+    width: 600,
+    height: 458.57,
+  },
+  {
+    imageSrc: '/images/gallery/chilaquiles-en-salsa-poblana-con-pollo.webp',
+    altText: 'chilaquiles en salsa poblana',
+    width: 600,
+    height: 507.55,
+  },
+  {
+    imageSrc: '/images/gallery/combinacion-wakajta.webp',
+    altText: 'combinacion wakajta',
+    width: 600,
+    height: 491.63,
+  },
+  {
+    imageSrc: '/images/gallery/jugos-de-fruta-natural.webp',
+    altText: 'jugos de fruta natural',
+    width: 600,
+    height: 483.67,
+  },
+  {
+    imageSrc: '/images/gallery/guacamole.webp',
+    altText: 'guacamole',
+    width: 600,
+    height: 530.82,
+  },
+  {
+    imageSrc: '/images/gallery/huevos-ahogados-en-salsa-divorciada.webp',
+    altText: 'huevos ahogados en salsa divorciada',
+    width: 600,
+    height: 536.94,
+  },
+];

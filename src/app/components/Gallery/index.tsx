@@ -1,11 +1,13 @@
-import { Section } from '../Section';
+import { EmblaCarousel } from '@/components/EmblaCarousel';
+
+import { SLIDES } from './slides';
+import { AUTOPLAY_OPTIONS, OPTIONS } from './config';
 
 const Gallery = () => {
   return (
-    <Section className="relative bg-[#EAA63A]">
-      <div className="flex"></div>
-      <div className="min-h-15 sm:min-h-40"></div>
-    </Section>
+    <section className="relative bg-[#EAA63A] pt-28 pb-28">
+      <EmblaCarousel slides={SLIDES} options={OPTIONS} autoplayOptions={AUTOPLAY_OPTIONS} />
+    </section>
   );
 };
 
