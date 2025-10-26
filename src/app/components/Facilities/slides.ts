@@ -1,5 +1,11 @@
 export const SLIDES = [
   {
+    imageSrc: '/images/facilities/fachada-principal.webp',
+    altText: 'fachada de la entrada principal',
+    width: 600, // forced to fit, real value is 720
+    height: 463.47, // forced to fit, real value is 480
+  },
+  {
     imageSrc: '/images/facilities/palapa-con-mesas.webp',
     altText: 'mesas bajo la palapa principal',
     width: 600, // forced to fit, real value is 720
