@@ -1,5 +1,14 @@
 import Image from 'next/image';
 
+import LocationPinIcon from '../../../../public/icons/location-pin.svg';
+
+const googleMapsLinkProps = {
+  href: 'https://maps.app.goo.gl/Xy29xwBizaMpBrSD8',
+  target: '_blank',
+  rel: 'noopener noreferrer',
+  ariaLabel: 'Abrir en Google Maps',
+};
+
 const Location = () => {
   return (
     <section className="flex flex-col justify-between bg-[#EDE4DF] lg:flex-row">
@@ -7,9 +16,13 @@ const Location = () => {
         <div className="flex flex-col gap-[12] sm:gap-[16]">
           <h2 className="text-[1.5rem] font-bold text-black sm:text-[1.875rem]">UBICACIÓN</h2>
           <div className="w-[276] sm:w-84">
-            <p className="text-[1.25rem] text-black sm:text-[1.25rem]">
+            <a
+              className="group text-[1.25rem] text-black hover:text-gray-600 sm:text-[1.25rem]"
+              {...googleMapsLinkProps}
+            >
               Blvd. Rotarismo 1835, Desarrollo Urbano Tres Ríos, 80020, Culiacán Rosales, Sin.
-            </p>
+              <LocationPinIcon className="invisible inline-block h-[20] w-[20] group-hover:visible group-hover:fill-gray-500" />
+            </a>
           </div>
         </div>
         <div className="flex flex-col gap-[12] sm:gap-[16]">
@@ -22,14 +35,18 @@ const Location = () => {
           </div>
         </div>
       </div>
-      <div className="relative aspect-375/340 w-full lg:w-[500]">
+      <div className="group relative aspect-375/340 w-full lg:w-[500]">
         <Image
           alt="mapa de ubicación"
           src="/images/location/mapa-ubicacion.webp"
           unoptimized
           fill
-          className="object-contain"
+          className="object-contain transition-transform duration-500 ease-out group-hover:scale-103 group-hover:opacity-92 group-active:scale-98"
           sizes="(min-width: 1024px) 500px, 100vw"
+        />
+        <a
+          className="absolute inset-0 z-2 cursor-pointer bg-transparent"
+          {...googleMapsLinkProps}
         />
       </div>
     </section>
