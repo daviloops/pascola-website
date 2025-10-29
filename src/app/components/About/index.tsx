@@ -8,10 +8,10 @@ const About = () => {
           <div className="relative h-[88] w-[88] sm:h-[174] sm:w-[174]">
             <Image
               alt="raices del pueblo"
-              src="/images/about/raices-del-pueblo.svg"
-              unoptimized
+              src="/images/about/raices-del-pueblo.webp"
               fill
               className="object-contain"
+              sizes="(max-width: 640px) 88px, 174px"
             />
           </div>
         </div>
@@ -19,10 +19,10 @@ const About = () => {
           <div className="relative h-[57] w-[73] sm:h-[113.97] sm:w-[146]">
             <Image
               alt="juya ania"
-              src="/images/about/juya-ania.svg"
-              unoptimized
+              src="/images/about/juya-ania.webp"
               fill
               className="object-contain"
+              sizes="(max-width: 640px) 73px, 146px"
             />
           </div>
         </div>
@@ -43,10 +43,10 @@ const About = () => {
         <div className="relative h-[176] w-[176] sm:h-[444] sm:w-[444] lg:h-[510] lg:w-[510]">
           <Image
             alt="danzante"
-            src="/images/about/danzante.svg"
-            unoptimized
+            src="/images/about/danzante.webp"
             fill
             className="object-contain"
+            sizes="(max-width: 640px) 176px, (max-width: 1024px) 444px, 510px"
           />
         </div>
       </div>

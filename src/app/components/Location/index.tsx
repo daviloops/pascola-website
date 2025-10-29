@@ -6,7 +6,7 @@ const googleMapsLinkProps = {
   href: 'https://maps.app.goo.gl/Xy29xwBizaMpBrSD8',
   target: '_blank',
   rel: 'noopener noreferrer',
-  ariaLabel: 'Abrir en Google Maps',
+  'aria-label': 'Abrir en Google Maps',
 };
 
 const Location = () => {
@@ -17,11 +17,13 @@ const Location = () => {
           <h2 className="text-[1.5rem] font-bold text-black sm:text-[1.875rem]">UBICACIÓN</h2>
           <div className="w-[276] sm:w-84">
             <a
-              className="group text-[1.25rem] text-black hover:text-gray-600 sm:text-[1.25rem]"
+              className="group text-[1.25rem] text-black hover:text-gray-600 active:text-gray-700 sm:text-[1.25rem]"
               {...googleMapsLinkProps}
             >
-              Blvd. Rotarismo 1835, Desarrollo Urbano Tres Ríos, 80020, Culiacán Rosales, Sin.
-              <LocationPinIcon className="invisible inline-block h-[20] w-[20] group-hover:visible group-hover:fill-gray-500" />
+              <span className="mr-0.5">
+                Blvd. Rotarismo 1835, Desarrollo Urbano Tres Ríos, 80020, Culiacán Rosales, Sin.
+              </span>
+              <LocationPinIcon className="invisible mb-1.5 inline-block h-[20] w-[20] group-hover:visible group-hover:fill-gray-500 group-active:visible group-active:fill-gray-600" />
             </a>
           </div>
         </div>
