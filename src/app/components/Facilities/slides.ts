@@ -6,6 +6,12 @@ export const SLIDES = [
     height: 463.47, // forced to fit, real value is 480
   },
   {
+    imageSrc: '/images/facilities/danzantes.webp',
+    altText: 'danzantes de danza venado y pascola',
+    width: 600,
+    height: 422.45,
+  },
+  {
     imageSrc: '/images/facilities/palapa-con-mesas.webp',
     altText: 'mesas bajo la palapa principal',
     width: 600, // forced to fit, real value is 720
@@ -21,7 +27,7 @@ export const SLIDES = [
     imageSrc: '/images/facilities/palapa-y-exterior.webp',
     altText: 'mesas bajo la palapa principal y jardín exterior',
     width: 600,
-    height: 450,
+    height: 371.63,
   },
   {
     imageSrc: '/images/facilities/area-descanso-con-techumbre.webp',
@@ -34,5 +40,11 @@ export const SLIDES = [
     altText: 'area de niños con juegos',
     width: 600,
     height: 450, // forced to fit, real value is 543
+  },
+  {
+    imageSrc: '/images/facilities/cantaro-de-agua.webp',
+    altText: 'cantaro de agua',
+    width: 600,
+    height: 800.2,
   },
 ];

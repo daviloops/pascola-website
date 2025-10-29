@@ -30,10 +30,22 @@ export const SLIDES = [
     height: 498.37,
   },
   {
+    imageSrc: '/images/gallery/gallina-pinta.webp',
+    altText: 'gallina pinta',
+    width: 600,
+    height: 546.73,
+  },
+  {
     imageSrc: '/images/gallery/estrellados-montaditos-en-mole-pascola.webp',
     altText: 'estrellados montaditos en mole pascola',
     width: 600,
     height: 512.45,
+  },
+  {
+    imageSrc: '/images/gallery/frijol-yorimuni.webp',
+    altText: 'frijol yorimuni',
+    width: 600,
+    height: 565.71,
   },
   {
     imageSrc: '/images/gallery/combinacion-kabba.webp',

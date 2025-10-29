@@ -32,9 +32,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
     Autoplay({
       playOnInit: true,
-      delay: autoplayOptions?.delay || 4000,
+      delay: autoplayOptions?.delay || 3000,
       stopOnInteraction: false,
-      stopOnMouseEnter: true,
       stopOnFocusIn: true,
     }),
   ]);
@@ -114,9 +113,11 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map(({ imageSrc, altText, width, height }: Slide, index) => (
-            <div className="embla__slide flex-[0_0_55%] lg:flex-[0_0_35%]" key={index}>
+            <div
+              className="embla__slide flex-[0_0_85%] sm:flex-[0_0_55%] lg:flex-[0_0_35%]"
+              key={index}
+            >
               <div className="embla__slide__number h-[243] sm:h-[276] md:h-[312] lg:h-[288] xl:h-[333] 2xl:h-[366]">
-                {/* TODO: maybe add biggest size to mobile w-[340] h-[255] */}
                 <div
                   className={`relative aspect-${width}/${height} h-[243] w-[324] sm:h-[276] sm:w-[368] md:h-[312] md:w-[416] lg:h-[288] lg:w-[384] xl:h-[333] xl:w-[444] 2xl:h-[366] 2xl:w-[488]`}
                 >

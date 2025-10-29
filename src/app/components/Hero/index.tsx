@@ -10,7 +10,7 @@ const Hero = () => {
         alt="restaurante Pascola con un platillo de comida en el centro"
         src="/images/hero/restaurante-pascola.webp"
         fill
-        className="bg-[#D94E41] object-cover"
+        className="bg-[#D94E41] object-cover object-top"
         priority
         fetchPriority="high"
         sizes="100vw"
@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center gap-[36] px-12 text-center sm:gap-[52]">
-        <div className="relative h-[166] w-[264] sm:h-[290.4] sm:w-[462]">
+        <div className="relative h-[188.96] w-[300] sm:h-[290.4] sm:w-[462]">
           <Image
             alt="logo"
             src="/images/hero/logo.webp"
@@ -34,7 +34,7 @@ const Hero = () => {
             Sabores únicos que te transportarán a la tradición del pueblo
           </h1>
         </div>
-        <div className="join join-vertical sm:join-horizontal gap-4 sm:gap-8">
+        <div className="join join-horizontal gap-4 max-sm:absolute max-sm:bottom-6 sm:gap-8">
           <MenuButton
             className="join-item"
             href="/menu-pascola.pdf"

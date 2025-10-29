@@ -126,7 +126,7 @@ const jsonLd: WithContext<Restaurant> = {
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
