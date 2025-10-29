@@ -9,7 +9,6 @@ const nextConfig: NextConfig = {
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    unoptimized: true, // Needed to make app static
   },
   // To allow svg import
   turbopack: {
@@ -44,8 +43,6 @@ const nextConfig: NextConfig = {
       },
     },
   },
-  // Make app static
-  output: 'export',
 };
 
 export default nextConfig;

@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "export": "next export",
-    "start": "serve out",
+    "start": "next start",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
     "format": "prettier --write .",
