@@ -52,7 +52,7 @@ const Hero = () => {
           </h1>
         </div>
         <div
-          className={`join join-horizontal ${fixed ? 'fixed top-0 z-110 mt-5' : 'z-10'} gap-4 max-sm:absolute max-sm:bottom-6 sm:gap-8`}
+          className={`join join-horizontal ${fixed ? 'fixed top-0 z-110 mt-5' : 'z-10 max-sm:absolute max-sm:bottom-6'} gap-4 sm:gap-8`}
         >
           <MenuButton
             className="join-item"

@@ -1,8 +1,7 @@
+const { SITE_URL } = require('@/lib/constants');
+
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.pascolarestaurante.mx',
+  siteUrl: SITE_URL,
   generateRobotsTxt: true,
-  //   sitemapSize: 5000,
-  //   changefreq: 'weekly',
-  //   priority: 0.7,
 };

@@ -6,6 +6,7 @@ import Footer from '@/app/components/Footer';
 
 import './globals.css';
 import Providers from './providers';
+import { SITE_URL } from '@/lib/constants';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -48,11 +49,11 @@ export const metadata = {
     title: 'Restaurante Pascola | Desayunos tradicionales mexicanos en Culiacán',
     description:
       'Restaurante familiar en Culiacán que ofrece desayunos regionales típicos de Sinaloa. Saborea la cocina indígena Mayo Yoreme.',
-    url: 'https://www.pascolarestaurante.mx',
+    url: SITE_URL,
     siteName: 'Restaurante Pascola',
     images: [
       {
-        url: 'https://www.pascolarestaurante.mx/images/hero/restaurante-pascola.webp',
+        url: `${SITE_URL}/images/hero/restaurante-pascola.webp`,
         width: 1920,
         height: 1440,
         alt: 'Desayuno tradicional mexicano en el restaurante Pascola',
@@ -67,9 +68,9 @@ export const metadata = {
     title: 'Restaurante Pascola | Desayunos tradicionales mexicanos en Culiacán',
     description:
       'Restaurante familiar en Culiacán que ofrece desayunos regionales típicos de Sinaloa. Saborea la cocina indígena Mayo Yoreme.',
-    images: ['https://www.pascolarestaurante.mx/images/hero/restaurante-pascola.webp'],
+    images: [`${SITE_URL}/images/hero/restaurante-pascola.webp']`],
   },
-  metadataBase: new URL('https://www.pascolarestaurante.mx'),
+  metadataBase: new URL(SITE_URL),
 };
 
 export default function RootLayout({
