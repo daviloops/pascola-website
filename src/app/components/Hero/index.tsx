@@ -1,11 +1,28 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 import { Section } from '@/app/components/Section';
 import { MenuButton } from '@/app/components/Hero/MenuButton';
 
 const Hero = () => {
+  const [fixed, setFixed] = useState(false);
+
+  useEffect(() => {
+    const sentinel = document.getElementById('hero');
+    if (!sentinel) return;
+
+    const observer = new IntersectionObserver(([entry]) => setFixed(!entry.isIntersecting), {
+      threshold: 0,
+    });
+
+    if (sentinel) observer.observe(sentinel);
+    return () => sentinel && observer.unobserve(sentinel);
+  }, []);
+
   return (
-    <Section className="relative flex h-dvh justify-center">
+    <Section id="hero" className="relative flex h-dvh justify-center">
       <Image
         alt="restaurante Pascola con un platillo de comida en el centro"
         src="/images/hero/restaurante-pascola.webp"
@@ -34,7 +51,9 @@ const Hero = () => {
             Sabores únicos que te transportarán a la tradición del pueblo
           </h1>
         </div>
-        <div className="join join-horizontal gap-4 max-sm:absolute max-sm:bottom-6 sm:gap-8">
+        <div
+          className={`join join-horizontal ${fixed ? 'fixed top-0 z-110 mt-5' : 'z-10'} gap-4 max-sm:absolute max-sm:bottom-6 sm:gap-8`}
+        >
           <MenuButton
             className="join-item"
             href="/menu-pascola.pdf"
