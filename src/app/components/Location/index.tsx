@@ -41,7 +41,6 @@ const Location = () => {
         <Image
           alt="mapa de ubicación"
           src="/images/location/mapa-ubicacion.webp"
-          unoptimized
           fill
           className="object-contain transition-transform duration-500 ease-out group-hover:scale-103 group-hover:opacity-92 group-active:scale-98"
           sizes="(min-width: 1024px) 500px, 100vw"

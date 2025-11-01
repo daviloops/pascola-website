@@ -1,40 +1,25 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 import { Section } from '@/app/components/Section';
 import { MenuButton } from '@/app/components/Hero/MenuButton';
 
 const Hero = () => {
-  const [fixed, setFixed] = useState(false);
-
-  useEffect(() => {
-    const sentinel = document.getElementById('hero');
-    if (!sentinel) return;
-
-    const observer = new IntersectionObserver(([entry]) => setFixed(!entry.isIntersecting), {
-      threshold: 0,
-    });
-
-    if (sentinel) observer.observe(sentinel);
-    return () => sentinel && observer.unobserve(sentinel);
-  }, []);
-
   return (
     <Section id="hero" className="relative flex h-dvh justify-center">
       <Image
         alt="restaurante Pascola con un platillo de comida en el centro"
         src="/images/hero/restaurante-pascola.webp"
         fill
-        className="bg-[#D94E41] object-cover object-top"
+        className="bg-[#D94E41] object-cover max-sm:object-top"
         priority
         fetchPriority="high"
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
-      <div className="relative z-10 flex flex-col items-center justify-center gap-[36] px-12 text-center sm:gap-[52]">
+      <div className="relative z-10 flex flex-col items-center justify-center gap-[36] px-12 pb-14 text-center sm:gap-[52]">
         <div className="relative h-[188.96] w-[300] sm:h-[290.4] sm:w-[462]">
           <Image
             alt="logo"
@@ -51,9 +36,7 @@ const Hero = () => {
             Sabores únicos que te transportarán a la tradición del pueblo
           </h1>
         </div>
-        <div
-          className={`join join-horizontal ${fixed ? 'fixed top-0 z-110 mt-5' : 'z-10 max-sm:absolute max-sm:bottom-6'} gap-4 sm:gap-8`}
-        >
+        <div className={`join join-horizontal z-10 gap-4 max-sm:absolute max-sm:bottom-6 sm:gap-8`}>
           <MenuButton
             className="join-item"
             href="/menu-pascola.pdf"

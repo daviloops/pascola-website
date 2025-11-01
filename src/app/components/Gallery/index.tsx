@@ -5,7 +5,7 @@ import { AUTOPLAY_OPTIONS, OPTIONS } from './config';
 
 const Gallery = () => {
   return (
-    <section className="relative bg-[#EAA63A] pt-28 pb-28">
+    <section className="relative bg-[#EAA63A] py-28">
       <EmblaCarousel slides={SLIDES} options={OPTIONS} autoplayOptions={AUTOPLAY_OPTIONS} />
     </section>
   );

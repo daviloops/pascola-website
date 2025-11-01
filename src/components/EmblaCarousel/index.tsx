@@ -114,18 +114,18 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <div className="embla__container">
           {slides.map(({ imageSrc, altText, width, height }: Slide, index) => (
             <div
-              className="embla__slide flex-[0_0_85%] sm:flex-[0_0_55%] lg:flex-[0_0_35%]"
+              className="embla__slide flex-[0_0_85%] sm:flex-[0_0_55%] lg:flex-[0_0_38%]"
               key={index}
             >
-              <div className="embla__slide__number h-[243] sm:h-[276] md:h-[312] lg:h-[288] xl:h-[333] 2xl:h-[366]">
+              <div className="embla__slide__number h-[243] sm:h-[276] md:h-[327] lg:h-[333] xl:h-[372] 2xl:h-[402]">
                 <div
-                  className={`relative aspect-${width}/${height} h-[243] w-[324] sm:h-[276] sm:w-[368] md:h-[312] md:w-[416] lg:h-[288] lg:w-[384] xl:h-[333] xl:w-[444] 2xl:h-[366] 2xl:w-[488]`}
+                  className={`relative aspect-${width}/${height} h-[243] w-[324] sm:h-[276] sm:w-[368] md:h-[327] md:w-[436] lg:h-[333] lg:w-[444] xl:h-[372] xl:w-[496] 2xl:h-[402] 2xl:w-[536]`}
                 >
                   <Image
-                    className="embla__slide__img h-[243] object-cover sm:h-[276] md:h-[312] lg:h-[288] xl:h-[333] 2xl:h-[366]"
+                    className="embla__slide__img h-[243] object-cover sm:h-[276] md:h-[327] lg:h-[333] xl:h-[372] 2xl:h-[402]"
                     src={imageSrc}
                     alt={altText}
-                    sizes="(max-width: 640px) 324px, (max-width: 768px) 368px, (max-width: 1024px) 416px, (max-width: 1280px) 384px, (max-width: 1536px) 444px, 488px"
+                    sizes="(max-width: 640px) 324px, (max-width: 768px) 368px, (max-width: 1024px) 436px, (max-width: 1280px) 444px, (max-width: 1536px) 496px, 536px"
                     fill
                     loading="lazy"
                   />

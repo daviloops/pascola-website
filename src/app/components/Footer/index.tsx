@@ -8,7 +8,7 @@ const Footer = ({ className, ...props }: HTMLAttributes<HTMLElement>): JSX.Eleme
   return (
     <footer
       className={clsx(
-        'flex flex-col items-center justify-center gap-[24] bg-[#3F7364] py-14.5 text-gray-100',
+        'flex flex-col items-center justify-center gap-[20] bg-[#3F7364] py-14.5 text-gray-100 sm:gap-[24]',
         className
       )}
       {...props}

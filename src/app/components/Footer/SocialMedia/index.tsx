@@ -7,7 +7,7 @@ import InstagramIcon from '../../../../../public/icons/instagram.svg';
 
 const SocialMedia = (): JSX.Element => {
   return (
-    <div className="flex gap-[24] sm:gap-[30]">
+    <div className="flex gap-[24] sm:gap-[28]">
       <LinkIcon
         href="https://www.facebook.com/pascolacln"
         icon={<FacebookIcon />}
