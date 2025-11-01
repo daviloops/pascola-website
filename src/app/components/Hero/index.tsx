@@ -7,7 +7,7 @@ import { MenuButton } from '@/app/components/Hero/MenuButton';
 
 const Hero = () => {
   return (
-    <Section id="hero" className="relative flex min-h-dvh justify-center pt-6">
+    <Section id="hero" className="relative flex h-dvh justify-center pt-6">
       <Image
         alt="restaurante Pascola con un platillo de comida en el centro"
         src="/images/hero/restaurante-pascola.webp"
@@ -19,13 +19,13 @@ const Hero = () => {
       />
       <div className="absolute inset-0 bg-black opacity-40"></div>
 
-      <div className="relative z-10 flex flex-col items-center justify-center gap-[36] px-12 pb-14 text-center sm:gap-[52]">
+      <div className="relative z-10 flex flex-col items-center justify-center gap-[36] px-12 pb-14 text-center">
         <div className="relative h-[188.96] w-[300] sm:h-[290.4] sm:w-[462]">
           <Image
             alt="logo"
             src="/images/hero/logo.webp"
             fill
-            className="object-cover"
+            className="object-contain"
             priority
             fetchPriority="high"
             sizes="(max-width: 640px) 264px, 462px"
