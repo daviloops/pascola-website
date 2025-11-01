@@ -4,6 +4,7 @@ import { Restaurant, WithContext } from 'schema-dts';
 import { Hero } from '@/app/components/Hero';
 import { About } from '@/app/components/About';
 import { Gallery } from '@/app/components/Gallery';
+import { Events } from '@/app/components/Events';
 import { Location } from '@/app/components/Location';
 import { Facilities } from '@/app/components/Facilities';
 
@@ -138,6 +139,7 @@ export default function Home() {
       <Hero />
       <About />
       <Gallery />
+      <Events />
       <Location />
       <Facilities />
       {/* // TODO clean and also from styles */}
