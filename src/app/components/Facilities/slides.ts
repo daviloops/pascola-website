@@ -2,8 +2,8 @@ export const SLIDES = [
   {
     imageSrc: '/images/facilities/fachada-principal.webp',
     altText: 'fachada de la entrada principal',
-    width: 600, // forced to fit, real value is 720
-    height: 463.47, // forced to fit, real value is 480
+    width: 600,
+    height: 475.75,
   },
   {
     imageSrc: '/images/facilities/danzantes.webp',
@@ -14,8 +14,8 @@ export const SLIDES = [
   {
     imageSrc: '/images/facilities/palapa-con-mesas.webp',
     altText: 'mesas bajo la palapa principal',
-    width: 600, // forced to fit, real value is 720
-    height: 450, // forced to fit, real value is 480
+    width: 600,
+    height: 450,
   },
   {
     imageSrc: '/images/facilities/area-privada.webp',
@@ -27,7 +27,7 @@ export const SLIDES = [
     imageSrc: '/images/facilities/palapa-y-exterior.webp',
     altText: 'mesas bajo la palapa principal y jardín exterior',
     width: 600,
-    height: 371.63,
+    height: 371.64,
   },
   {
     imageSrc: '/images/facilities/area-descanso-con-techumbre.webp',
@@ -39,7 +39,7 @@ export const SLIDES = [
     imageSrc: '/images/facilities/area-ninos.webp',
     altText: 'area de niños con juegos',
     width: 600,
-    height: 450, // forced to fit, real value is 543
+    height: 450,
   },
   {
     imageSrc: '/images/facilities/cantaro-de-agua.webp',

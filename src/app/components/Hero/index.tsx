@@ -7,7 +7,7 @@ import { MenuButton } from '@/app/components/Hero/MenuButton';
 
 const Hero = () => {
   return (
-    <Section id="hero" className="relative flex h-dvh justify-center">
+    <Section id="hero" className="relative flex min-h-dvh justify-center pt-6">
       <Image
         alt="restaurante Pascola con un platillo de comida en el centro"
         src="/images/hero/restaurante-pascola.webp"
