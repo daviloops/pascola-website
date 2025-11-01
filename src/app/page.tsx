@@ -56,7 +56,7 @@ const jsonLd: WithContext<Restaurant> = {
   // TODO: automate
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '4.5',
+    ratingValue: '4.6',
     reviewCount: '723',
   },
   areaServed: {
