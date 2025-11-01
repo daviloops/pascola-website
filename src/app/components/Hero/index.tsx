@@ -17,7 +17,7 @@ const Hero = () => {
         fetchPriority="high"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="absolute inset-0 bg-black opacity-40"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center gap-[36] px-12 pb-14 text-center sm:gap-[52]">
         <div className="relative h-[188.96] w-[300] sm:h-[290.4] sm:w-[462]">
