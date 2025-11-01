@@ -12,6 +12,7 @@ const Events = () => {
         className="object-cover bg-blend-darken"
         sizes="100vw"
       />
+      <div className="absolute inset-0 bg-[#463933] mix-blend-overlay"></div>
       <div className="absolute inset-0 bg-[#463933] opacity-30"></div>
 
       <div className="z-1 flex flex-col items-center justify-center gap-[24]">
