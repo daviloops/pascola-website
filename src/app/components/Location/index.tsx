@@ -15,13 +15,13 @@ const Location = () => {
       <div className="z-1 mx-8 my-15 flex flex-wrap gap-15 sm:mt-[5.15rem] sm:ml-12">
         <div className="flex flex-col gap-[12] sm:gap-[16]">
           <h2 className="text-[1.5rem] font-bold text-black sm:text-[1.875rem]">UBICACIÓN</h2>
-          <div className="w-[276] sm:w-84">
+          <div className="w-[276] sm:w-72">
             <a
               className="group text-[1.25rem] text-black hover:text-gray-600 active:text-gray-700 sm:text-[1.25rem]"
               {...googleMapsLinkProps}
             >
               <span className="mr-0.5">
-                Blvd. Rotarismo 1835, Desarrollo Urbano Tres Ríos, 80020, Culiacán Rosales, Sin.
+                Blvd. Rotarismo 1835, Desarrollo Urbano Tres Ríos, 80020, Culiacán, Sinaloa.
               </span>
               <LocationPinIcon className="invisible mb-1.5 inline-block h-[20] w-[20] group-hover:visible group-hover:fill-gray-500 group-active:visible group-active:fill-gray-600" />
             </a>

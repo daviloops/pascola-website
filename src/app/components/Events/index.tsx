@@ -21,7 +21,7 @@ const Events = () => {
         </div>
         <div>
           <p className="max-w-[319] text-center text-[18px] text-white sm:max-w-[868] sm:text-[24px]">
-            En Pascola nos encargamos del espacio, la comida y cada detalle de tus eventos. Tu sólo
+            En Pascola nos encargamos del espacio, la comida y cada detalle de tus eventos. Tú solo
             disfruta.
           </p>
         </div>
