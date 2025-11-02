@@ -21,7 +21,8 @@ const Location = () => {
               {...googleMapsLinkProps}
             >
               <span className="mr-0.5">
-                Blvd. Rotarismo 1835, Desarrollo Urbano Tres Ríos, 80020, Culiacán, Sinaloa.
+                Blvd. Rotarismo 1835 <br /> Desarrollo Urbano Tres Ríos <br /> 80020. Culiacán,
+                Sinaloa.
               </span>
               <LocationPinIcon className="invisible mb-1.5 inline-block h-[20] w-[20] group-hover:visible group-hover:fill-gray-500 group-active:visible group-active:fill-gray-600" />
             </a>

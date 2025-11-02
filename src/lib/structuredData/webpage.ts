@@ -5,7 +5,7 @@ export const WebPageData: WithContext<WebPage> = {
   '@context': 'https://schema.org',
   '@id': `${SITE_URL}/#webpage`,
   '@type': 'WebPage',
-  name: 'Restaurante Pascola | Desayunos regionales en Culiacán',
+  name: 'Restaurante Pascola | Desayunos tradicionales mexicanos en Culiacán',
   inLanguage: 'es',
   isPartOf: { '@id': `${SITE_URL}/#website` },
   about: { '@id': `${SITE_URL}/#restaurant` },

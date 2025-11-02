@@ -99,18 +99,21 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <script
+          id="restaurant-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(RestaurantData).replace(/</g, '\\u003c'),
           }}
         />
         <script
+          id="website-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(WebSiteData).replace(/</g, '\\u003c'),
           }}
         />
         <script
+          id="webpage-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(WebPageData).replace(/</g, '\\u003c'),

@@ -26,7 +26,7 @@ const Events = () => {
           </p>
         </div>
         <div>
-          <MenuButton href="https://wa.me/526673239767">Reservar</MenuButton>
+          <MenuButton href="https://wa.me/526673239767">Más información</MenuButton>
         </div>
       </div>
     </section>

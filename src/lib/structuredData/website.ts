@@ -29,8 +29,8 @@ export const WebSiteData: WithContext<WebSite> = {
       target: 'https://wa.me/526673239767',
     },
     {
-      '@type': 'ReserveAction',
-      name: 'Reservar evento',
+      '@type': 'InformAction',
+      name: 'Más información',
       target: 'https://wa.me/526673239767',
     },
     {
