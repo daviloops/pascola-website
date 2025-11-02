@@ -7,34 +7,12 @@ import { Events } from '@/app/components/Events';
 import { Location } from '@/app/components/Location';
 import { Facilities } from '@/app/components/Facilities';
 
-import { RestaurantData } from '@/lib/structuredData/restaurant';
-import { WebSiteData } from '@/lib/structuredData/website';
-import { WebPageData } from '@/lib/structuredData/webpage';
-
 // TODO clean
 // import SuscriptionModal from '@/components/molecules/SuscriptionModal';
 
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(RestaurantData).replace(/</g, '\\u003c'),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(WebSiteData).replace(/</g, '\\u003c'),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(WebPageData).replace(/</g, '\\u003c'),
-        }}
-      />
       <Hero />
       <About />
       <Gallery />

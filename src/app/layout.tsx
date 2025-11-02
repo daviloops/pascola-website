@@ -7,6 +7,9 @@ import Footer from '@/app/components/Footer';
 import './globals.css';
 import Providers from './providers';
 import { SITE_URL } from '@/lib/constants';
+import { RestaurantData } from '@/lib/structuredData/restaurant';
+import { WebSiteData } from '@/lib/structuredData/website';
+import { WebPageData } from '@/lib/structuredData/webpage';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -94,6 +97,24 @@ export default function RootLayout({
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(RestaurantData).replace(/</g, '\\u003c'),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(WebSiteData).replace(/</g, '\\u003c'),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(WebPageData).replace(/</g, '\\u003c'),
+          }}
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
