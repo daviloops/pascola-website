@@ -10,6 +10,7 @@ import { SITE_URL } from '@/lib/constants';
 import { RestaurantData } from '@/lib/structuredData/restaurant';
 import { WebSiteData } from '@/lib/structuredData/website';
 import { WebPageData } from '@/lib/structuredData/webpage';
+import { RestaurantVideo, RestaurantVideo2 } from '@/lib/structuredData/videos';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -117,6 +118,20 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(WebPageData).replace(/</g, '\\u003c'),
+          }}
+        />
+        <script
+          id="video-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(RestaurantVideo).replace(/</g, '\\u003c'),
+          }}
+        />
+        <script
+          id="video2-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(RestaurantVideo2).replace(/</g, '\\u003c'),
           }}
         />
       </head>

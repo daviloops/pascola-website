@@ -1,4 +1,4 @@
-import { EmblaCarousel } from '@/components/EmblaCarousel';
+import { EmblaCarousel } from '@/app/components/Gallery/EmblaCarousel';
 
 import { SLIDES } from './slides';
 import { AUTOPLAY_OPTIONS, OPTIONS } from './config';
