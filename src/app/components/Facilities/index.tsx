@@ -9,7 +9,8 @@ const Facilities = () => {
     <section className="flex items-center justify-center gap-12 bg-[#EDE4DF] px-12 pt-15 pb-19 max-lg:flex-col sm:gap-14 sm:pt-16 sm:pb-20 md:gap-18 md:pt-18 md:pb-21 lg:gap-8 lg:pt-25 lg:pb-28">
       <div className="w-full max-lg:order-2 max-lg:max-w-[444] lg:w-1/4">
         <VideoModal
-          src="/videos/pascola.mp4"
+          webmSrc="/videos/pascola.webm"
+          mp4Src="/videos/pascola.mp4"
           posterSrc="/videos/poster_pascola.png"
           posterAlt="Pascola restaurante"
           posterYOffset={40}
@@ -20,7 +21,8 @@ const Facilities = () => {
       </div>
       <div className="w-full max-lg:order-3 max-lg:max-w-[444] lg:w-1/4">
         <VideoModal
-          src="/videos/pascola2.mp4"
+          webmSrc="/videos/pascola2.webm"
+          mp4Src="/videos/pascola2.mp4"
           posterSrc="/videos/poster_pascola2.png"
           posterAlt="Pascola restaurante"
           posterYOffset={15}

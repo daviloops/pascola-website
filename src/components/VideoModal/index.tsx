@@ -4,13 +4,20 @@ import { useState } from 'react';
 import type { JSX } from 'react';
 
 interface VideoModalProps {
-  src: string;
+  webmSrc: string;
+  mp4Src: string;
   posterSrc: string;
   posterAlt: string;
   posterYOffset?: number;
 }
 
-const VideoModal = ({ src, posterSrc, posterAlt, posterYOffset }: VideoModalProps): JSX.Element => {
+const VideoModal = ({
+  webmSrc,
+  mp4Src,
+  posterSrc,
+  posterAlt,
+  posterYOffset,
+}: VideoModalProps): JSX.Element => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -60,7 +67,8 @@ const VideoModal = ({ src, posterSrc, posterAlt, posterYOffset }: VideoModalProp
               playsInline
               poster={posterSrc}
             >
-              <source src={src} type="video/mp4" />
+              <source src={webmSrc} type="video/webm" />
+              <source src={mp4Src} type="video/mp4" />
               Tu navegador no soporta video HTML5.
             </video>
           )}
