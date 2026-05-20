@@ -3,7 +3,7 @@
 import Image from 'next/image';
 
 import { Section } from '@/app/components/Section';
-import { MenuButton } from '@/app/components/Hero/MenuButton';
+import { MenuButton } from '@/components/MenuButton';
 
 const Hero = () => {
   return (
